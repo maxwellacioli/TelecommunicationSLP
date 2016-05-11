@@ -1,0 +1,27 @@
+# Lists all features from the model with manual (first digit) and automatic (second digit) selection
+# 0 = deselected, 1 = selected, 2 = undefined
+21TelecommunicationsSPL
+11Gerenciamento
+11Financeiro
+11Fatura
+11Cliente
+20PessoaFisica
+12PessoaJuridica
+11Aplicacao
+12Web
+12Mobile
+11Servicos
+11Tv
+20Basico
+12Completo
+11Telefonia
+11Movel
+12PrePago
+20PosPago
+11Fixa
+12LocalIlimitado
+20DDDIliimtado
+11Internet
+20CincoMegas
+12DezMegas
+20QuinzeMegas

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="TelecommunicationsSPL">
+				<and mandatory="true" name="Gerenciamento">
+					<and mandatory="true" name="Financeiro">
+						<feature mandatory="true" name="Fatura"/>
+					</and>
+					<alt mandatory="true" name="Cliente">
+						<feature mandatory="true" name="PessoaFisica"/>
+						<feature mandatory="true" name="PessoaJuridica"/>
+					</alt>
+					<or mandatory="true" name="Aplicacao">
+						<feature mandatory="true" name="Web"/>
+						<feature mandatory="true" name="Mobile"/>
+					</or>
+				</and>
+				<or mandatory="true" name="Servicos">
+					<alt mandatory="true" name="Tv">
+						<feature mandatory="true" name="Basico"/>
+						<feature mandatory="true" name="Completo"/>
+					</alt>
+					<or mandatory="true" name="Telefonia">
+						<alt mandatory="true" name="Movel">
+							<feature mandatory="true" name="PrePago"/>
+							<feature mandatory="true" name="PosPago"/>
+						</alt>
+						<alt mandatory="true" name="Fixa">
+							<feature mandatory="true" name="LocalIlimitado"/>
+							<feature mandatory="true" name="DDDIliimtado"/>
+						</alt>
+					</or>
+					<alt mandatory="true" name="Internet">
+						<feature mandatory="true" name="CincoMegas"/>
+						<feature mandatory="true" name="DezMegas"/>
+						<feature mandatory="true" name="QuinzeMegas"/>
+					</alt>
+				</or>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
