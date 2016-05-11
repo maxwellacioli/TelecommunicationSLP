@@ -17,4 +17,5 @@ public class PessoaJuridica extends Cliente {
 	public void setCnpj(int cnpj) {
 		this.cnpj = cnpj;
 	}
+
 }
