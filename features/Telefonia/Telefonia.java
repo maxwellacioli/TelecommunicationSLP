@@ -1,17 +1,8 @@
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * TODO description
+ * 
  */
-public class Telefonia {
+public abstract class Telefonia extends Servicos {
 
-	private int numeroTelefonico;
-	
-	public Telefonia( ) {
-		numeroTelefonico = ThreadLocalRandom.current().nextInt(90000000, 99999999);
-	}
-	
-	public int getNumeroTelefonico() {
-		return numeroTelefonico;
-	}
+
 }

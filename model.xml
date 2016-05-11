@@ -9,11 +9,7 @@
 					<alt mandatory="true" name="Cliente">
 						<feature mandatory="true" name="PessoaFisica"/>
 						<feature mandatory="true" name="PessoaJuridica"/>
-					</alt>
-					<or mandatory="true" name="Aplicacao">
-						<feature mandatory="true" name="Web"/>
-						<feature mandatory="true" name="Mobile"/>
-					</or>
+					</alt>					
 				</and>
 				<or mandatory="true" name="Servicos">
 					<alt mandatory="true" name="Tv">

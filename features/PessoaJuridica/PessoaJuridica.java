@@ -1,5 +1,5 @@
 /**
- * TODO description
+ * 
  */
 public class PessoaJuridica extends Cliente {
 

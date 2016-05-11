@@ -1,5 +1,5 @@
 /**
- * TODO description
+ * 
  */
 public class PessoaFisica extends Cliente {
 
@@ -17,4 +17,5 @@ public class PessoaFisica extends Cliente {
 	public void setCpf(int cpf) {
 		this.cpf = cpf;
 	}
+
 }

@@ -1,7 +1,6 @@
 /**
- * TODO description
+ * 
  */
-public class Internet {
-
-	
+public class Internet extends Servicos {
+		
 }

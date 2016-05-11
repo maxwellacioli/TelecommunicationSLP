@@ -1,6 +1,6 @@
 /**
- * TODO description
+ * 
  */
-public class Tv {
+public class Tv extends Servicos {
 
 }

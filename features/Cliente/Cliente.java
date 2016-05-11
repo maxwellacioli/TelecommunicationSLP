@@ -1,11 +1,15 @@
+import java.util.ArrayList;
+
 /**
- * TODO description
+ * 
  */
 public class Cliente {
 	
 	private String name;
 	private String endereco;
+	
 	private Fatura fatura;
+	private ArrayList<Servicos> servicos;
 	
 	public Cliente(String name, String endereco) {
 		this.name = name;
@@ -34,5 +38,13 @@ public class Cliente {
 	
 	public void setFatura(Fatura fatura) {
 		this.fatura = fatura;
+	}
+	
+	public ArrayList<Servicos> getServicos() {
+		return servicos;
+	}
+	
+	public void setServicos(ArrayList<Servicos> servicos) {
+		this.servicos = servicos;
 	}
 }

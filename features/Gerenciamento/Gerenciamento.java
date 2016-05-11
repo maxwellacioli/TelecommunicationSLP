@@ -1,14 +1,20 @@
 import java.util.ArrayList;
-
 /**
- * TODO description
+ * 
  */
 public class Gerenciamento {
+
 	private static Gerenciamento gerenciamentoSingleton;
-	private Aplicacao aplicacao;
+	
+	Financeiro financeiro;
+	Cliente cliente;
+	ArrayList<Servicos> servicos;
 	
 	private Gerenciamento() {
-		aplicacao = Aplicacao.getInstance();
+		
+		servicos = new ArrayList<Servicos>();
+	
+	
 	}
 	
 	public static Gerenciamento getInstance() {
@@ -16,6 +22,14 @@ public class Gerenciamento {
 			gerenciamentoSingleton = new Gerenciamento();
 		}
 		return gerenciamentoSingleton;
+	}
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
+	
+	public Financeiro getFinanceiro() {
+		return financeiro;
 	}
 	
 }
