@@ -21,12 +21,15 @@ public  class  Main {
 		PessoaJuridica pj = new PessoaJuridica(nome, endereco, cnpj);
 		
 		Fatura fatura;
-				
+		
 		fatura = new Fatura();
 		
 		fatura.getValor();
 		
 		System.out.println("Cadastro efetivado! "+ pj.getName());
+		
+		
+		
 		
 	}
 
