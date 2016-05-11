@@ -3,18 +3,18 @@
  */
 public class PessoaFisica extends Cliente {
 
-	private int cpf;
+	private String cpf;
 	
-	public PessoaFisica(String name, String endereco, int cpf) {
+	public PessoaFisica(String name, String endereco, String cpf) {
 		super(name, endereco);
 		this.cpf = cpf;
 	}
 	
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 	
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 

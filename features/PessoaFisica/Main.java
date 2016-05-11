@@ -15,7 +15,7 @@ public  class  Main {
 		String endereco = reader.nextLine();
 		
 		System.out.println("Digite o cpf: ");
-		int cpf = reader.nextInt();
+		String cpf = reader.nextLine();
 
 		reader.close();
 		

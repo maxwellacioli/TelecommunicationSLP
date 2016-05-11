@@ -15,7 +15,7 @@ public  class  Main {
 		String endereco = reader.nextLine();
 		
 		System.out.println("Digite o cnpj:");
-		int cnpj = reader.nextInt();
+		String cnpj = reader.nextLine();
 		reader.close();
 		
 		PessoaJuridica pj = new PessoaJuridica(nome, endereco, cnpj);

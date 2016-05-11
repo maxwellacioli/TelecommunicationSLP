@@ -3,18 +3,18 @@
  */
 public class PessoaJuridica extends Cliente {
 
-	private int cnpj;
+	private String cnpj;
 	
-	public PessoaJuridica(String name, String endereco, int cnpj) {
+	public PessoaJuridica(String name, String endereco, String cnpj) {
 		super(name, endereco);
 		this.cnpj = cnpj;
 	}
 	
-	public int getCnpj() {
+	public String getCnpj() {
 		return cnpj;
 	}
 	
-	public void setCnpj(int cnpj) {
+	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
 
