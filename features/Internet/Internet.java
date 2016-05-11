@@ -1,6 +1,4 @@
-/**
- * 
- */
-public class Internet extends Servicos {
-		
+
+public class Internet {
+
 }
