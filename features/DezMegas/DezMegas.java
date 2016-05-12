@@ -3,10 +3,15 @@
  */
 public class DezMegas extends Internet {
 
-	public final double valorInternet = 100.00;
+	private final double valorInternetDez = 100.00;
+	private final String descricaoDez = "Internet Dez Megas";
 	
-	public double getValor() {
-		return valorInternet;
+	public Servicos servicoInternet() {
+		
+		this.descricao = descricaoDez;
+		this.valor = valorInternetDez;
+		
+		return this;
 	}
 	
 }

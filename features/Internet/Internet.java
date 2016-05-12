@@ -1,8 +1,6 @@
 
 public abstract class Internet extends Servicos {
 
-	double valorInternet;
-	
-	public abstract double getValor();
+	public abstract Servicos servicoInternet();
 	
 }
