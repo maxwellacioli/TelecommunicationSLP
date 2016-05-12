@@ -4,7 +4,7 @@
 public class CincoMegas extends Internet {
 
 	private final double valorInternetCinco = 85.00;
-	private final String descricaoCinco = "Internet Cinco Megas";
+	private final String descricaoCinco = "Internet 5 megas";
 	
 	public Servicos servicoInternet() {
 		

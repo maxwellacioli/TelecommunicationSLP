@@ -14,6 +14,7 @@ public class Cliente {
 
 	public Cliente() {
 		servicos = new ArrayList<Servicos>();
+		fatura = new Fatura();
 	}
 
 	public String getNome() {
@@ -44,11 +45,24 @@ public class Cliente {
 		this.servicos = servicos;
 	}
 
-	public void listServicos() {
+	public void listarServicos() {
 		
 		for (Servicos servico : servicos) {
 			System.out.println(servico);
 		}
+	}
+	
+	public void gerarFatura(int dia) {
+		
+		double total;
+		String data;
+		
+		total = fatura.calcularValorTotal(servicos);
+		System.out.println("O valor total da sua fatura é: R$ "+ total);
+		
+		data = fatura.getProximaData(dia);
+		System.out.println("O vencimento será em: "+ data);
+		
 	}
 
 	

@@ -3,38 +3,46 @@ import java.util.Scanner;
 public  class  Main {
 	
 	
-	public static void main(String[] args) {
-		System.out.println("Bem vindo");
-		System.out.println("... Cadastro de Pessoa Jurídica ...");
+public static void main(String[] args) {
+		
+		System.out.println("Bem vindo!!");
+		System.out.println("\n..:: Cadastro de Pessoa Jurídica ::..\n");
 		
 		Scanner reader = new Scanner(System.in);
-		System.out.println("Digite a razão social:");
+		System.out.println("Digite a razão social: ");
 		String nome = reader.nextLine();
 		
-		System.out.println("Digite o endereço:");
+		System.out.println("Digite o endereço: ");
 		String endereco = reader.nextLine();
 		
-		System.out.println("Digite o cnpj:");
+		System.out.println("Digite o cnpj: ");
 		String cnpj = reader.nextLine();
-		reader.close();
+
+		int dia=0;
+		do {
+			System.out.println("Qual melhor dia para sua fatura: ");
+			dia = reader.nextInt();
+		} while (dia < 1 || dia > 31);
 		
+		reader.close();
+//		
+//		/**/
+//		
 		PessoaJuridica pj = new PessoaJuridica();
 		
-//		pf.setNome(nome);
-//		pf.setEndereco(endereco);
-//		pf.setCnpj(cnpj);
+		pj.setNome(nome);
+		pj.setEndereco(endereco);
+		pj.setCnpj(cnpj);
 		
-		Fatura fatura;
+		System.out.println("\nCadastro efetivado! "+ pj.getNome());
 		
-		fatura = new Fatura();
+		System.out.println("\n..:: Listando serviços do produto ::..\n");
 		
-		fatura.getValor();
+		pj.listarServicos();
 		
-		System.out.println("Cadastro efetivado! "+ pj.getNome());
-		
-		
-		
-		
+		System.out.println();
+		pj.gerarFatura(dia);
+				
 	}
 
 
