@@ -18,7 +18,11 @@ public  class  Main {
 		String cnpj = reader.nextLine();
 		reader.close();
 		
-		PessoaJuridica pj = new PessoaJuridica(nome, endereco, cnpj);
+		PessoaJuridica pj = new PessoaJuridica();
+		
+//		pf.setNome(nome);
+//		pf.setEndereco(endereco);
+//		pf.setCnpj(cnpj);
 		
 		Fatura fatura;
 		
@@ -26,7 +30,7 @@ public  class  Main {
 		
 		fatura.getValor();
 		
-		System.out.println("Cadastro efetivado! "+ pj.getName());
+		System.out.println("Cadastro efetivado! "+ pj.getNome());
 		
 		
 		

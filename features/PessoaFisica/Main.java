@@ -22,10 +22,13 @@ public  class  Main {
 //		
 //		/**/
 //		
-//		PessoaFisica pf = new PessoaFisica(nome, endereco, cpf);
-		PessoaFisica pf = new PessoaFisica("", "", "");
+		PessoaFisica pf = new PessoaFisica();
 		
-		System.out.println("Cadastro efetivado! "+ pf.getName());
+//		pf.setNome(nome);
+//		pf.setEndereco(endereco);
+//		pf.setCpf(cpf);
+		
+		System.out.println("Cadastro efetivado! "+ pf.getNome());
 		
 		System.out.println("... Listando serviços do produto ...");
 		

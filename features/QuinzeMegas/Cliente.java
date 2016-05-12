@@ -5,10 +5,9 @@ import java.util.ArrayList;
  */
 public class Cliente {
 
-	public void addServicos() {
+	public Cliente() {
 		
-		QuinzeMegas internetQuinze = new QuinzeMegas();
-		
+		QuinzeMegas internetQuinze = new QuinzeMegas();		
 		servicos.add(internetQuinze.servicoInternet());
 		
 	}

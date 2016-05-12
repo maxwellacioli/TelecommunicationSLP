@@ -5,26 +5,23 @@ import java.util.ArrayList;
  */
 public class Cliente {
 
-	private String name;
+	private String nome;
 	private String endereco;
 
 	private Fatura fatura;
 
 	private ArrayList<Servicos> servicos;
 
-	public Cliente(String name, String endereco) {
-		this.name = name;
-		this.endereco = endereco;
-		
+	public Cliente() {
 		servicos = new ArrayList<Servicos>();
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getEndereco() {
@@ -49,14 +46,9 @@ public class Cliente {
 
 	public void listServicos() {
 		
-		addServicos();
 		for (Servicos servico : servicos) {
 			System.out.println(servico);
 		}
-	}
-
-	private void addServicos() {
-		
 	}
 
 	
